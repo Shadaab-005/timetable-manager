@@ -1,18 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/header">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:text="Timetable Manager"
+            android:textSize="40dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:text="Sign in to continue"
+            android:textSize="18dp"
+            android:letterSpacing="0.03"
+            android:textColor="#fbc02d"
+            android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="786dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="#ad168b"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:text="Email"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/forget"
+            android:text="Enter the Email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:text="Password"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/forget"
+            android:text="Enter the Password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="35dp"
+            android:text="Forgot Password?"
+            android:textColor="#ad168b"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textColor="#fff"
+            android:background="@drawable/button"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="95dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Don't have an account?Sign Up"
+            android:textColor="#ad168b"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

@@ -6,27 +6,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="120dp"
         android:gravity="center_horizontal"
         android:background="@drawable/header"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textview1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Register"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Timetable Manager"
             android:textColor="#fff"
-            android:textSize="70dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/textview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:letterSpacing="0.03"
             android:text="Sign Up to continue"
             android:textColor="#fbc02d"
-            android:textSize="40dp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
 
@@ -42,7 +44,7 @@
             android:text="Register"
             android:textColor="#ad168b"
             android:textStyle="bold"
-            android:textSize="55dp"
+            android:textSize="25dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="35dp"/>
 
@@ -52,7 +54,7 @@
             android:text="Email"
             android:textColor="#000"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="35dp"/>
 
@@ -71,7 +73,7 @@
             android:text="Password"
             android:textColor="#000"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="35dp"/>
 
@@ -90,7 +92,7 @@
             android:text="Confirm Password"
             android:textColor="#000"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="35dp"/>
 
@@ -102,28 +104,26 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="10dp"/>
-        
+
         <Button
-            android:layout_width="340dp"
-            android:layout_height="50dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
             android:text="Register"
             android:textColor="#fff"
             android:background="@drawable/button"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="35dp"/>
+            android:layout_marginLeft="95dp"/>
+
         <TextView
+            android:id="@+id/alreadyhaveaccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Do you have an account?Sign in"
-            android:textColor="#000"
-            android:textStyle="bold"
-            android:textSize="25dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center"/>
-
-
-
-
+            android:text="Do you have an account?Sign in"
+            android:textColor="#ad168b"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>

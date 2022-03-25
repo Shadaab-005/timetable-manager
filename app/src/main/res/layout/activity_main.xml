@@ -64,13 +64,15 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/inputemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="35dp"
             android:background="@drawable/forget"
-            android:text="Enter the Email" />
+            android:inputType="textEmailAddress"
+            android:hint="Enter the Email" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,13 +85,15 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/inputpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="35dp"
             android:background="@drawable/forget"
-            android:text="Enter the Password" />
+            android:inputType="textPassword"
+            android:hint="Enter the Password" />
 
         <TextView
             android:id="@+id/forgotpassword"
@@ -104,6 +108,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btnlogin"
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:layout_marginLeft="95dp"

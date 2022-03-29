@@ -62,8 +62,9 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 perforLogin();
+
+
             }
         });
     }
@@ -104,8 +105,9 @@ public class MainActivity extends AppCompatActivity {
     }
 }
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(MainActivity.this,HomeActivity.class);
+        Intent intent=new Intent(MainActivity.this,HomeScreen.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(new Intent(MainActivity.this,HomeScreen.class));
         startActivity(intent);
     }
 }

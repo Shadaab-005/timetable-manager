@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayout;
 public class HomeScreen extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private Viewpageradapter adapter;
 
 
     @Override
@@ -20,12 +21,13 @@ public class HomeScreen extends AppCompatActivity {
 
         tabLayout= findViewById(R.id.tablayout);
         viewPager= findViewById(R.id.viewpager);
+        adapter= new Viewpageradapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewPager);
-        VPadapter vPadapter = new VPadapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        vPadapter.addFragment(new fragment1(),"Future Tasks");
-        vPadapter.addFragment(new fragment2(),"Postponed Tasks");
-        vPadapter.addFragment(new fragment3(),"Goal Status");
-        viewPager.setAdapter(vPadapter);
+        adapter.AddFragment(new fragment_futuretasks(),"Future Tasks");
+        adapter.AddFragment(new fragment_postponed(),"Postponed Tasks");
+        adapter.AddFragment(new fragment_goalstatus(),"Goal Status");
+        viewPager.setAdapter(adapter);
     }
 }

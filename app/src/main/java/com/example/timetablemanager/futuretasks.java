@@ -5,13 +5,21 @@ public class futuretasks {
     private String Tasktobeper;
     private String Time;
     private String Taskdesc;
+    private String Date;
 
 
-    public futuretasks(String tasktobeper, String time, String taskdesc) {
+    public futuretasks(String tasktobeper, String time, String taskdesc, String date) {
         Tasktobeper = tasktobeper;
         Time = time;
         Taskdesc = taskdesc;
+        Date = date;
     }
+
+    public String getDate() {
+        return Date;
+    }
+
+
 
     public String getTasktobeper() {
         return Tasktobeper;
@@ -36,5 +44,8 @@ public class futuretasks {
 
     public void setTaskdesc(String taskdesc) {
         Taskdesc = taskdesc;
+    }
+    public void setDate(String date) {
+        Date = date;
     }
 }

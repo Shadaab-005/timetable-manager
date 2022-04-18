@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:titleTextColor="@color/white"
+    android:background="@color/accent"
+    style="@style/Base.CardView"
+    app:popupTheme="@style/menuStyle"
+    android:id="@+id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/la1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_baseline_perm_identity_24"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:id="@+id/profile"></Button>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"
+            android:layout_toLeftOf="@id/la1"
+            android:layout_margin="5dp">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:id="@+id/notifn"></Button>
+
+        </FrameLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.appcompat.widget.Toolbar>
